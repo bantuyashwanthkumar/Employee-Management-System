@@ -1,0 +1,8 @@
+/* Cleared default Vite styles to allow full-screen Tailwind layouts */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
