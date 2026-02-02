@@ -21,7 +21,9 @@ const App = () => {
       setLoggedInUserData(userData.data)
     }
   }, [])
-
+  
+// Authentication
+  
   const handleLogin = (email, password) => {
     if (email === 'admin@me.com' && password === '123') {
       setUser('admin')
@@ -70,5 +72,4 @@ const App = () => {
     </>
   )
 }
-
 export default App
