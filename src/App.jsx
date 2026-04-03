@@ -52,13 +52,14 @@ const App = () => {
       tasks: []
     }
 
+    // User registeration
     const updatedEmployees = [...userData.employees, newUser]
     setUserData({ ...userData, employees: updatedEmployees })
     localStorage.setItem('employees', JSON.stringify(updatedEmployees))
     alert("Registration Successful! Please login.")
     setCurrentView('login')
   }
-
+  
   return (
     <>
       {!user ? (
